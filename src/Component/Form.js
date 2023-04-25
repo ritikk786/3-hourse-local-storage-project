@@ -10,7 +10,10 @@ import React,{useState} from 'react'
   const submithandler= (event)=>{
     event.preventDefault()
     props.addorder(id,price,dishname,table)
-      
+    setId('')
+    setPrice('')
+    setDishname('')
+    setTable('')
     }
 
     const orderIdvalue=(event)=>{
